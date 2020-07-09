@@ -1,6 +1,6 @@
 [user]
   name  = Dmitry Minaev
-  email = mnvdmitry@gmail.com
+  email = me@mnvdmitry.cc
 
 [alias]
   current-branch = "!git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \\(.*\\)/\\1/'"
