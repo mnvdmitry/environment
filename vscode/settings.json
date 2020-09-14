@@ -6,29 +6,36 @@
   "editor.folding": false,
 
   "workbench.activityBar.visible": false,
+  "workbench.colorTheme": "GitHub Dark",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "One Dark Pro",
   "workbench.list.smoothScrolling": true,
 
   "emmet.triggerExpansionOnTab": true,
 
+  "files.eol": "\n",
+
   "[javascript]": {
-      "editor.formatOnSave": true,
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   
   "[typescript]": {
-      "editor.formatOnSave": true,
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   "[typescriptreact]": {
-      "editor.formatOnSave": true,
-      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
 
   "[svelte]": {
-      "editor.formatOnSave": true
+    "editor.formatOnSave": true
   },
-  "svelte.plugin.css.enable": false
+  "svelte.plugin.css.enable": false,
+
+  "[html]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
