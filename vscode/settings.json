@@ -11,8 +11,20 @@
   "workbench.list.smoothScrolling": true,
 
   "emmet.triggerExpansionOnTab": true,
+  "terminal.integrated.shell.osx": "/bin/zsh",
 
-  "files.eol": "\n",
+  "prettier.requireConfig": true,
+  
+  "themeswitch.directives": [
+    {
+        "time": "17:00",
+        "theme": "GitHub Dark"
+    },
+    {
+        "time": "07:00",
+        "theme": "GitHub Light"
+    }
+  ],
 
   "[javascript]": {
     "editor.formatOnSave": true,
