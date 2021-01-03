@@ -1,0 +1,9 @@
+{
+    "Print to console": {
+        "prefix": "lg",
+        "scope": "javascript, typescript",
+        "body": [
+            "console.log('🚀 $TM_FILEPATH - $TM_LINE_NUMBER: ', $1);"
+        ]
+    }
+}
