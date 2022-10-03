@@ -1,43 +1,44 @@
 {
-  "editor.fontSize":14,
-  "editor.minimap.enabled":false,
-  "editor.tabSize":2,
-  "editor.smoothScrolling":true,
-  "editor.folding":false,
-  "workbench.activityBar.visible": false,
-  "workbench.list.smoothScrolling":true,
-  "workbench.colorTheme": "GitHub Dark",
-  "workbench.preferredLightColorTheme": "GitHub Light",
-  "workbench.preferredDarkColorTheme": "GitHub Dark",
-  "window.zoomLevel":1,
-  "window.autoDetectColorScheme": true,
-  "terminal.integrated.defaultProfile.osx":"zsh",
-  "diffEditor.renderSideBySide":true,
-  "gitlens.statusBar.enabled":false,
-  "gitlens.codeLens.enabled":false,
-  "[javascript]":{
-    "editor.formatOnSave":false
-  },
-  "[typescript]":{
-    "editor.formatOnSave":false
-  },
-  "[typescriptreact]":{
-    "editor.formatOnSave":false
-  },
-  "[svelte]":{
-    "editor.formatOnSave":false
-  },
-  "[html]":{
-    "editor.formatOnSave":false
-  },
-  "emmet.triggerExpansionOnTab":true,
-  "emmet.includeLanguages":{
-    "postcss":"css"
-  },
-  "editor.suggestSelection":"first",
-  "extensions.autoUpdate": "onlyEnabledExtensions",
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true,
-    "source.fixAll.stylelint": true
+    "editor.fontSize":14,
+    "editor.minimap.enabled":false,
+    "editor.tabSize":2,
+    "editor.smoothScrolling":true,
+    "editor.folding":false,
+    "workbench.activityBar.visible": false,
+    "workbench.list.smoothScrolling": true,
+    "workbench.colorTheme": "GitHub Light",
+    "workbench.preferredLightColorTheme": "GitHub Light",
+    "workbench.preferredDarkColorTheme": "GitHub Dark",
+    "window.zoomLevel":1,
+    "window.autoDetectColorScheme": true,
+    "terminal.integrated.defaultProfile.osx":"zsh",
+    "diffEditor.renderSideBySide":true,
+    "gitlens.statusBar.enabled":false,
+    "gitlens.codeLens.enabled":false,
+    "[javascript]":{
+      "editor.formatOnSave":false
+    },
+    "[typescript]":{
+      "editor.formatOnSave":false
+    },
+    "[typescriptreact]":{
+      "editor.formatOnSave":false
+    },
+    "[svelte]":{
+      "editor.formatOnSave":false
+    },
+    "[html]":{
+      "editor.formatOnSave":false
+    },
+    "emmet.triggerExpansionOnTab":true,
+    "emmet.includeLanguages":{
+      "postcss":"css"
+    },
+    "editor.suggestSelection":"first",
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.stylelint": true
+    },
+    "workbench.layoutControl.enabled": false
   }
-}
