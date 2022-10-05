@@ -40,5 +40,8 @@
       "source.fixAll.eslint": true,
       "source.fixAll.stylelint": true
     },
-    "workbench.layoutControl.enabled": false
+    "workbench.layoutControl.enabled": false,
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "terminal.integrated.shellIntegration.enabled": false,
+    "explorer.autoReveal": false,
   }
