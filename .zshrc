@@ -1,3 +1,4 @@
+#aliases
 alias aprc="arc pr create"
 alias ac="arc commit -m"
 alias acb="arc branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \\(.*\\)/\\1/'"
@@ -8,7 +9,10 @@ alias as="arc status --short --branch"
 alias aa="arc add . && as"
 alias ach="arc checkout"
 
+# variables
 export VAULT_TOKEN=AQAD-qJSKhJwAAAN_jT8Lk84DUv0ouihzxzi35Q
-
 EDITOR=nano
-PS1='%1d / '
+PS1='%F{cyan}%1d /%f '
+
+# plugins
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
