@@ -1,65 +1,14 @@
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+alias aprc="arc pr create"
+alias ac="arc commit -m"
+alias acb="arc branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \\(.*\\)/\\1/'"
+alias ah="arc push -u $(acb)"
+alias alg="arc log --format \"{color.red}{commit.short}{color.yellow}{branches} {color.reset}{title} {color.cyan}{author} ({date_rfc})\""
+alias al="arc pull trunk && arc rebase trunk"
+alias as="arc status --short --branch"
+alias aa="arc add . && as"
+alias ach="arc checkout"
 
-export ZSH="/Users/mnvdmitry/.oh-my-zsh"
+export VAULT_TOKEN=AQAD-qJSKhJwAAAN_jT8Lk84DUv0ouihzxzi35Q
 
-ZSH_THEME="robbyrussell"
-
-plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-find-up () {
-    path=$(pwd)
-    while [[ "$path" != "" && ! -e "$path/$1" ]]; do
-        path=${path%/*}
-    done
-    echo "$path"
-}
-
-cdnvm(){
-    cd $@;
-    nvm_path=$(find-up .nvmrc | tr -d '[:space:]')
-
-    # If there are no .nvmrc file, use the default nvm version
-    if [[ ! $nvm_path = *[^[:space:]]* ]]; then
-
-        declare default_version;
-        default_version=$(nvm version default);
-
-        # If there is no default version, set it to `node`
-        # This will use the latest version on your machine
-        if [[ $default_version == "N/A" ]]; then
-            nvm alias default node;
-            default_version=$(nvm version default);
-        fi
-
-        # If the current version is not the default version, set it to use the default version
-        if [[ $(nvm current) != "$default_version" ]]; then
-            nvm use default;
-        fi
-
-        elif [[ -s $nvm_path/.nvmrc && -r $nvm_path/.nvmrc ]]; then
-        declare nvm_version
-        nvm_version=$(<"$nvm_path"/.nvmrc)
-
-        # Add the `v` suffix if it does not exists in the .nvmrc file
-        if [[ $nvm_version != v* ]]; then
-            nvm_version="v""$nvm_version"
-        fi
-
-        # If it is not already installed, install it
-        if [[ $(nvm ls "$nvm_version" | tr -d '[:space:]') == "N/A" ]]; then
-            nvm install "$nvm_version";
-        fi
-
-        if [[ $(nvm current) != "$nvm_version" ]]; then
-            nvm use "$nvm_version";
-        fi
-    fi
-}
-
-alias cd='cdnvm'
+EDITOR=nano
+PS1='%1d / '
