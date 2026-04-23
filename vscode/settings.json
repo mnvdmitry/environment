@@ -4,14 +4,11 @@
     "editor.tabSize":2,
     "editor.smoothScrolling":true,
     "editor.folding":false,
-    "workbench.activityBar.visible": false,
     "workbench.list.smoothScrolling": true,
     "workbench.colorTheme": "GitHub Dark Dimmed",
     "workbench.preferredLightColorTheme": "GitHub Light Default",
     "workbench.preferredDarkColorTheme": "GitHub Dark Dimmed",
     "window.autoDetectColorScheme": true,
-    "terminal.integrated.defaultProfile.osx": "bash",
-    "diffEditor.renderSideBySide":true,
     "[javascript]":{
       "editor.formatOnSave":false
     },
@@ -21,28 +18,19 @@
     "[typescriptreact]":{
       "editor.formatOnSave":false
     },
-    "[svelte]":{
-      "editor.formatOnSave":false
-    },
     "[html]":{
       "editor.formatOnSave":false
     },
-    "emmet.triggerExpansionOnTab":true,
-    "emmet.includeLanguages":{
-      "postcss":"css"
-    },
     "editor.suggestSelection":"first",
     "extensions.autoUpdate": "onlyEnabledExtensions",
-    "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true,
-      "source.fixAll.stylelint": true
-    },
     "workbench.layoutControl.enabled": false,
-    "terminal.integrated.enableMultiLinePasteWarning": false,
-    "terminal.integrated.shellIntegration.enabled": false,
     "explorer.autoReveal": false,
     "security.workspace.trust.untrustedFiles": "newWindow",
     "diffEditor.ignoreTrimWhitespace": false,
-    "redhat.telemetry.enabled": true,
     "window.zoomLevel": 1,
+    "window.commandCenter": false,
+    "workbench.statusBar.visible": false,
+    "breadcrumbs.enabled": false,
+    "workbench.activityBar.location": "hidden",
+    "workbench.editor.editorActionsLocation": "hidden"
   }
