@@ -38,6 +38,7 @@ alias opencode='NODE_EXTRA_CA_CERTS="$HOME/.config/opencode/YandexInternalRootCA
 # Arc aliases
 alias aprc="arc pr create"
 alias ac="arc commit -m"
+alias as="arc submit -m"
 alias acb="arc branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/'"
 alias ah='arc push -u "$(acb)"'
 alias alg='arc log --format "{color.red}{commit.short}{color.yellow}{branches} {color.reset}{title} {color.cyan}{author} ({date_rfc})"'
