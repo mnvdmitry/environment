@@ -55,11 +55,6 @@ PS1='\[\e[36m\]\W /\[\e[0m\] '
 # Wizard: shell patches (NODE_EXTRA_CA_CERTS, alias wizard)
 [ -f "$HOME/.wizard/shell.rc" ] && . "$HOME/.wizard/shell.rc"
 
-# OpenClaw completion
-if [ -f "$HOME/.openclaw/completions/openclaw.bash" ]; then
-    . "$HOME/.openclaw/completions/openclaw.bash"
-fi
-
 # bash-completion (если установлен через brew)
 if [ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]; then
     . "/opt/homebrew/etc/profile.d/bash_completion.sh"
